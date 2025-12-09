@@ -1,0 +1,115 @@
+Google keywords
+Boneless couch nz
+
+Boneless Couch under $350
+
+Boneless Couch Amazon
+
+Boneless Couch Walmart
+
+Boneless Couch reviews
+
+Boneless Couch small
+
+Boneless couch Temu
+
+Boneless Couch Bed
+
+Answer the public keywords
+boneless couch amazon
+
+boneless couch after a year
+
+boneless couch and chair
+
+boneless couch after 2 years
+
+boneless couch amazon sale
+
+boneless couch and loveseat
+
+boneless couch and chair set
+
+boneless couch accessories
+
+boneless couch aarons
+
+boneless couch ad
+
+Answer the public topics:
+
+What are the best boneless couches available in the US market?
+
+Where can I buy a boneless couch online with fast shipping?
+
+Which furniture stores specialize in boneless couches?
+
+How do boneless couches compare to traditional couches in comfort?
+
+Are there any popular brands known for boneless couches?
+
+What are the top-rated boneless couches for small apartments?
+
+Can I find boneless couches with customizable fabric options?
+
+What companies offer boneless couches with eco-friendly materials?
+
+Where to find affordable boneless couches under $500?
+
+Do any online retailers have boneless couches with free returns?
+
+
+
+MASTER PROMPT
+/**
+ * GENERATE 3 PERFECTLY SEO-OPTIMIZED STATIC FILES (2025 standards) – INCLUDING TITLE BANNER + 3 PRODUCT IMAGES
+ *
+ * USER INPUT – REPLACE ONLY THE BRACKETS IF YOU WANT TO CUSTOMISE:
+ * Niche / Product: wireless earbuds for running
+ * Primary keyword: best wireless earbuds for running 2025
+ * Hook: 97% of runners ditch wired earbuds in the first week due to sweat & wire bounce
+ * Problem statement: Sweat kills regular earbuds in days. Wires bounce and tangle mid-run. Cheap "water-resistant" models die after one rainy session and sound muffled when you need motivation most.
+ * Product name: RunBeats Pro
+ * Key benefits (exactly 6, one per line starting with •):
+ *   • 100% sweat & rain proof (IP68 – survive any downpour)
+ *   • Zero wire bounce with secure wingtip design
+ *   • 14-hour battery – outlast your longest ultra
+ *   • Heart-rate monitoring built into the buds
+ *   • Crystal-clear sound with deep bass that pumps you up
+ *   • Auto-pause when you take one bud out
+ * Social proof: Rated 4.9/5 by 21,847 runners • #1 pick by Runner’s World 2025
+ * Main CTA button text: Claim 50% Off – Only 173 Left!
+ * Domain (no https://): runbeatspro.com
+ * Company name: RunBeats Audio
+ *
+ * STRICT RULES (you MUST obey every single one):
+ * 1. <title> exactly 50–60 characters (count them!)
+ * 2. Meta description exactly 150–160 characters
+ * 3. One <h1> only, 60–70 chars max, contains primary keyword + benefit
+ * 4. Perfect heading hierarchy: <h2> and <h3> only after the <h1>
+ * 5. Hero image: 1200×630, loading="eager", alt contains primary keyword
+ * 6. Immediately after the hero image: big TITLE BANNER with
+ *      — Huge <h1>
+ *      — Sub-headline with social proof
+ *      — Large prominent CTA button (use <a> styled as button)
+ * 7. After benefits section: add a section with exactly 3 lifestyle/product images
+ *      — Each image 800×800 (or 800×1000), lazy loading
+ *      — Use <picture> with AVIF → WebP → JPG fallback
+ *      — Alt text must contain primary keyword + descriptive action
+ *      — Example alts: "Runner using RunBeats Pro – best wireless earbuds for running 2025", etc.
+ *      — Small caption under each image
+ * 8. Minimum 5 FAQ items using <h3> for questions (perfect for FAQ schema)
+ * 9. sitemap.xml: use today’s date 2025-12-06 as <lastmod>
+ * 10. All links (CTA, privacy, etc.) point to the correct domain
+ *
+ * OUTPUT ONLY THESE 3 FILES with proper code fences and filenames:
+ * • index.html     → full page with title banner + 3 images
+ * • sitemap.xml    → valid XML
+ * • robots.txt     → clean + sitemap reference
+ *
+ * No extra text, no explanations — just the three perfect files.
+ */
+
+
+
+
