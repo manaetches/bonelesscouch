@@ -1,0 +1,56 @@
+/**
+ * GENERATE 3 PERFECTLY SEO-OPTIMIZED STATIC BLOG/ARTICLE FILES (2025 standards)
+ * → index.html (100/100 PageSpeed, rich-snippet ready) + sitemap.xml + robots.txt
+ * → Designed for long-form blog posts, listicles, guides, "best of" roundups
+ *
+ * USER INPUT – ONLY CHANGE THESE LINES:
+ * Article type: [e.g., Ultimate Guide | In-Depth Review | Listicle | Case Study]
+ * Primary keyword / Target title: [e.g., how to train for a marathon in 12 weeks 2025]
+ * Hook (first sentence – shocking stat, question or bold claim): [e.g., 87% of first-time marathoners get injured before race day]
+ * Problem / Pain point (2–4 sentences): [explain why the current situation sucks]
+ * Evidence & Research (3–6 short bullets of stats, studies, quotes, sources):
+ *   • [e.g., Journal of Sports Medicine 2024: poor programming causes 68% of running injuries]
+ *   • [source 2]
+ *   • [source 3]
+ *   • [source 4]
+ *   • [source 5]
+ *   • [source 6 – optional]
+ * Core solutions / steps / recommendations (exactly 5–8, one per line starting with •):
+ *   • [step or tip 1]
+ *   • [step or tip 2]
+ *   • [step or tip 3]
+ *   • [step or tip 4]
+ *   • [step or tip 5]
+ *   • [step or tip 6]
+ *   • [step or tip 7 – optional]
+ * Expected results / success proof: [e.g., Runners using this plan improved finish times by 18% on average]
+ * Main CTA at the end (text + link purpose): [e.g., Download Free 12-Week Marathon Training Plan → https://yourdomain.com/plan]
+ * Domain (no https://): [e.g., runsmart.com]
+ * Author name: [e.g., Dr. Sarah Miles, DPT]
+ * Publish year: [2025]
+ *
+ * STRICT RULES (must obey 100%):
+ * 1. <title> exactly 50–60 characters
+ * 2. Meta description exactly 150–160 characters
+ * 3. Only one <h1> – must contain primary keyword + year or benefit
+ * 4. Hero image 1200×630, loading="eager", alt contains primary keyword
+ * 5. After hero → big title banner with <h1>, author byline, publish date
+ * 6. Article structure must be:
+ *      - Hook paragraph
+ *      - Problem section (<h2>)
+ *      - Evidence/research section with bullets
+ *      - Main solutions section with numbered or bulleted <h2>/<h3>
+ *      - Results / success proof section
+ *      - Final CTA section (big button + urgency if applicable)
+ *      - 6–8 FAQ items in <h3> + <p> (perfect for FAQ schema)
+ * 7. Include exactly 3 supporting images inside the article (lazy loading, AVIF/WebP, descriptive alt with keyword)
+ * 8. Use natural LSI keywords and conversational 2025 tone
+ * 9. sitemap.xml lastmod = today’s date 2025-12-06
+ *
+ * OUTPUT ONLY THESE 3 FILES with correct code fences:
+ * • index.html
+ * • sitemap.xml  
+ * • robots.txt
+ *
+ * No extra text, no explanations — just the three perfect files.
+ */
