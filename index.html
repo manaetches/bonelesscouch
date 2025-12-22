@@ -45,12 +45,12 @@
 			},
 			"author": {
 				"@type": "Person",
-				"name": "Sarah Mitchell",
-				"url": "bonelesscouch.comauthor/sarah-mitchell"
+				"name": "Benjamin Etches",
+				"url": "bonelesscouch.com/author/boneless-couch-guide"
 			},
 			"publisher": {
 				"@type": "Organization",
-				"name": "Boneless Couch Guide",
+				"name": "Benjamin Etches",
 				"logo": {
 					"@type": "ImageObject",
 					"url": "bonelesscouch.comimages/logo.jpg"
@@ -151,9 +151,20 @@
 			.logo { display: flex; align-items: center; text-decoration: none; color: #333; font-weight: 700; font-size: 1.5rem; }
 			.logo img { height: 40px; margin-right: 0.5rem; }
 			.nav-menu { display: flex; list-style: none; margin: 0; padding: 0; gap: 2rem; }
-			.nav-menu a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; }
+			.nav-menu > li { position: relative; }
+			.nav-menu a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; display: block; }
 			.nav-menu a:hover { color: #667eea; }
 			.menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; padding: 0.5rem; }
+			
+			/* Dropdown Menu */
+			.dropdown { position: relative; }
+			.dropdown::after { content: ''; position: absolute; bottom: -0.5rem; left: 0; right: 0; height: 0.5rem; }
+			.dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: #fff; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border-radius: 8px; padding: 0.5rem 0; margin-top: 0; list-style: none; z-index: 1000; }
+			.dropdown:hover .dropdown-menu { display: block; }
+			.dropdown-menu li { padding: 0; }
+			.dropdown-menu a { padding: 0.75rem 1.25rem; color: #555; white-space: nowrap; }
+			.dropdown-menu a:hover { background: #f3f4f6; color: #667eea; }
+			.dropdown > a::after { content: ' ▾'; font-size: 0.85em; }
 			
 			/* Mobile Menu */
 			@media (max-width: 768px) {
@@ -162,6 +173,11 @@
 				.nav-menu.active { left: 0; }
 				.logo { font-size: 1.2rem; }
 				.logo img { height: 35px; }
+				
+				/* Mobile Dropdown */
+				.dropdown-menu { position: static; box-shadow: none; margin-top: 0.5rem; margin-left: 1rem; padding: 0.5rem 0; background: #f9fafb; border-radius: 4px; }
+				.dropdown.active .dropdown-menu { display: block; }
+				.dropdown > a { cursor: pointer; }
 			}
 			
 			/* Content Sections */
@@ -212,6 +228,35 @@
 				h2 { font-size: 1.5rem; }
 				h3 { font-size: 1.2rem; }
 			}
+			
+			/* Site Footer */
+			.site-footer { background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%); color: #fff; padding: 3rem 0 1.5rem 0; margin-top: 4rem; }
+			.footer-container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+			.footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2.5rem; margin-bottom: 2rem; }
+			.footer-section h3, .footer-section h4 { color: #fff; margin-top: 0; margin-bottom: 1rem; font-size: 1.2rem; }
+			.footer-logo { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+			.footer-logo img { border-radius: 8px; }
+			.footer-logo h3 { margin: 0; font-size: 1.5rem; }
+			.footer-description, .social-description { color: #cbd5e0; line-height: 1.6; font-size: 0.95rem; }
+			.footer-links { list-style: none; padding: 0; margin: 0; }
+			.footer-links li { margin: 0.75rem 0; }
+			.footer-links a { color: #cbd5e0; text-decoration: none; transition: color 0.2s; font-size: 0.95rem; }
+			.footer-links a:hover { color: #667eea; }
+			.social-links { display: flex; gap: 1rem; margin-top: 1rem; }
+			.social-links a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; color: #fff; text-decoration: none; transition: all 0.3s; font-size: 1.2rem; }
+			.social-links a:hover { background: #667eea; transform: translateY(-3px); }
+			.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; text-align: center; }
+			.footer-bottom p { color: #cbd5e0; font-size: 0.9rem; margin: 0.5rem 0; }
+			.affiliate-disclosure { font-size: 0.8rem !important; color: #a0aec0 !important; max-width: 800px; margin: 1rem auto 0 auto; }
+			
+			@media (max-width: 768px) {
+				.site-footer { padding: 2rem 0 1rem 0; }
+				.footer-content { grid-template-columns: 1fr; gap: 2rem; }
+				.footer-section { text-align: center; }
+				.footer-logo { justify-content: center; }
+				.social-links { justify-content: center; }
+				.footer-links { text-align: center; }
+			}
 		</style>
 	</head>
 	<body>
@@ -229,8 +274,13 @@
 					</button>
 					<ul class="nav-menu" id="navMenu">
 						<li><a href="/">Home</a></li>
-						<li><a href="#products">Best Picks</a></li>
-						<li><a href="genz-bonelesscouch.html">Gen Z preference</a></li>
+						<li class="dropdown">
+							<a href="#products">Best Picks</a>
+							<ul class="dropdown-menu">
+								<li><a href="genz-bonelesscouch.html">TikTok Trending Couch</a></li>
+								<li><a href="best-boneless-couches-2026.html">2026 Top Picks</a></li>
+							</ul>
+						</li>
 						<li><a href="#faq">FAQ</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="https://www.amazon.com/s?k=boneless+couch" target="_blank" rel="noopener">Shop Amazon</a></li>
@@ -250,7 +300,7 @@
 		<header class="article-header">
 		<h1>Best boneless couch options in 2026</h1>
 			<div class="author-meta">
-				<p><strong>By Sarah Mitchell</strong> | Published December 14, 2026 | 8 min read</p>
+				<p><strong>By Benjamin Etches</strong> | Published December 14, 2026 | 8 min read</p>
 			</div>
 			
 		</header>
@@ -724,9 +774,9 @@
 
 			<!-- Article Footer -->
 			<footer id="about" style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid #222222;">
-				<img src="images/sarah-mitchell.png" alt="Sarah Mitchell Author Photo" width="100" height="100" style="border-radius: 50%; float: left; margin-right: 1rem;" />
+				<img src="images/bonelesscouchexpert.png" alt="Benjamin Etches Author Photo" width="100" height="100" style="border-radius: 50%; float: left; margin-right: 1rem;" />
 				<p style="font-style: italic; color: #666;">
-					<strong>About the Author:</strong> Sarah Mitchell is a home furnishing expert with over 10 years of experience helping families create comfortable, functional living spaces. She specializes in budget-friendly furniture solutions and family-oriented design.
+					<strong>About the Author:</strong> Benjamin Etches is a home furnishing expert with over 10 years of experience helping families create comfortable, functional living spaces. They specialize in budget-friendly furniture solutions and family-oriented design.
 				</p>
 				
 				<p style="color: #999; font-size: 0.7rem;">
@@ -737,6 +787,79 @@
 
 		</article>
 
+		<!-- Site Footer -->
+		<footer class="site-footer">
+			<div class="footer-container">
+				<div class="footer-content">
+					<!-- Company Info Section -->
+					<div class="footer-section">
+						<div class="footer-logo">
+							<img src="images/logo_white.png" alt="Cloud Couch Logo" width="50" height="50" />
+							<h3>Cloud Couch</h3>
+						</div>
+						<p class="footer-description">
+							Your trusted guide to finding the perfect boneless couch for ultimate comfort and style. We help families create cozy spaces they'll love.
+						</p>
+					</div>
+
+					<!-- Quick Links Section -->
+					<div class="footer-section">
+						<h4>Quick Links</h4>
+						<ul class="footer-links">
+							<li><a href="/">Home</a></li>
+							<li><a href="genz-bonelesscouch.html">TikTok Trending Couch</a></li>
+							<li><a href="best-boneless-couches-2026.html">2026 Top Picks</a></li>
+							<li><a href="#faq">FAQ</a></li>
+							<li><a href="#about">About</a></li>
+						</ul>
+					</div>
+
+					<!-- Resources Section -->
+					<div class="footer-section">
+						<h4>Resources</h4>
+						<ul class="footer-links">
+							<li><a href="https://www.amazon.com/s?k=boneless+couch" target="_blank" rel="noopener">Shop on Amazon</a></li>
+							<li><a href="#products">Product Reviews</a></li>
+							<li><a href="#faq">Buying Guide</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+
+					<!-- Social Media Section -->
+					<div class="footer-section">
+						<h4>Follow Us</h4>
+						<p class="social-description">Stay updated with the latest reviews, tips, and deals!</p>
+						<div class="social-links">
+							<a href="https://facebook.com/cloudcouch" target="_blank" rel="noopener" aria-label="Facebook">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="https://instagram.com/cloudcouch" target="_blank" rel="noopener" aria-label="Instagram">
+								<i class="fab fa-instagram"></i>
+							</a>
+							<a href="https://tiktok.com/@cloudcouch" target="_blank" rel="noopener" aria-label="TikTok">
+								<i class="fab fa-tiktok"></i>
+							</a>
+							<a href="https://pinterest.com/cloudcouch" target="_blank" rel="noopener" aria-label="Pinterest">
+								<i class="fab fa-pinterest-p"></i>
+							</a>
+							<a href="https://youtube.com/@cloudcouch" target="_blank" rel="noopener" aria-label="YouTube">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Footer Bottom -->
+				<div class="footer-bottom">
+					<p>&copy; 2026 Cloud Couch. All rights reserved.</p>
+					<p class="affiliate-disclosure">
+						As an Amazon Associate, we earn from qualifying purchases. Product prices and availability are accurate as of the date/time indicated and are subject to change.
+					</p>
+				</div>
+			</div>
+		</footer>
+
 		<!-- Mobile Menu Toggle Script -->
 		<script>
 			function toggleMenu() {
@@ -744,8 +867,22 @@
 				navMenu.classList.toggle('active');
 			}
 			
-			// Close menu when clicking on a link
-			document.querySelectorAll('.nav-menu a').forEach(link => {
+			// Handle mobile dropdown toggle
+			document.addEventListener('DOMContentLoaded', () => {
+				const dropdown = document.querySelector('.dropdown');
+				if (dropdown) {
+					const dropdownLink = dropdown.querySelector('a');
+					dropdownLink.addEventListener('click', (e) => {
+						if (window.innerWidth <= 768) {
+							e.preventDefault();
+							dropdown.classList.toggle('active');
+						}
+					});
+				}
+			});
+			
+			// Close menu when clicking on a submenu link
+			document.querySelectorAll('.dropdown-menu a').forEach(link => {
 				link.addEventListener('click', () => {
 					document.getElementById('navMenu').classList.remove('active');
 				});
