@@ -173,7 +173,7 @@
 			.affiliate-box li { margin: 0.75rem 0; }
 			.affiliate-box a { color: #667eea; font-weight: 600; text-decoration: none; font-size: 1.1rem; }
 			.affiliate-box a:hover { text-decoration: underline; }
-			.affiliate-disclaimer { font-size: 0.85rem; color: #78716c; font-style: italic; margin-top: 1rem; }
+			.affiliate-disclosure { font-size: 0.8rem !important; color: #a0aec0 !important; max-width: 800px; margin: 1rem auto 0 auto; text-align: center; }
 			
 			/* Benefits Box */
 			.benefits-box { background: #ecfdf5; border: 2px solid #10b981; padding: 1.5rem; margin: 2rem 0; border-radius: 12px; }
@@ -240,9 +240,9 @@
 			.social-links { display: flex; gap: 1rem; margin-top: 1rem; }
 			.social-links a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; color: #fff; text-decoration: none; transition: all 0.3s; font-size: 1.2rem; }
 			.social-links a:hover { background: #667eea; transform: translateY(-3px); }
-			.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; text-align: center; }
-			.footer-bottom p { color: #cbd5e0; font-size: 0.9rem; margin: 0.5rem 0; }
-			.affiliate-disclosure { font-size: 0.8rem !important; color: #a0aec0 !important; max-width: 800px; margin: 1rem auto 0 auto; }
+			.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; text-align: center; max-width: auto; }
+			.footer-bottom p { color: #cbd5e0; font-size: 0.9rem; margin: 0.5rem 0; max-width: auto !important; }
+			.affiliate-disclosure { font-size: 0.8rem !important; color: #a0aec0 !important; max-width: 90% !important; margin: 1rem auto 0 auto; text-align: center; padding: 0 1rem; }
 			
 			@media (max-width: 768px) {
 				.site-footer { padding: 2rem 0 1rem 0; }
@@ -251,6 +251,7 @@
 				.footer-logo { justify-content: center; }
 				.social-links { justify-content: center; }
 				.footer-links { text-align: center; }
+				.affiliate-disclosure { font-size: 0.75rem !important; padding: 0 0.5rem; max-width: 95% !important; }
 			}
 		</style>
 	</head>
