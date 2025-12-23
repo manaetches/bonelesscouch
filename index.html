@@ -148,9 +148,11 @@
 			/* Header Navigation */
 			.site-header { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
 			.header-container { max-width: 1200px; margin: 0 auto; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
-			.logo { display: flex; align-items: center; text-decoration: none; color: #333; font-weight: 700; font-size: 1.5rem; }
-			.logo img { height: 40px; margin-right: 0.5rem; }
-			.nav-menu { display: flex; list-style: none; margin: 0; padding: 0; gap: 2rem; }
+		.logo-wrapper { display: flex; flex-direction: column; gap: 0.25rem; }
+		.logo { display: flex; align-items: center; text-decoration: none; color: #333; font-weight: 700; font-size: 1.5rem; }
+		.logo img { height: 40px; margin-right: 0.5rem; }
+		.logo-slogan { font-size: 0.7rem; color: #667eea; font-weight: 500; margin: 0; padding-left: 48px; font-style: italic; letter-spacing: 0.5px; }
+		.nav-menu { display: flex; list-style: none; margin: 0; padding: 0; gap: 2rem; }
 			.nav-menu > li { position: relative; }
 			.nav-menu a { text-decoration: none; color: #555; font-weight: 500; transition: color 0.2s; display: block; }
 			.nav-menu a:hover { color: #667eea; }
@@ -236,8 +238,7 @@
 			.footer-section h3, .footer-section h4 { color: #fff; margin-top: 0; margin-bottom: 1rem; font-size: 1.2rem; }
 			.footer-logo { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
 			.footer-logo img { border-radius: 8px; }
-			.footer-logo h3 { margin: 0; font-size: 1.5rem; }
-			.footer-description, .social-description { color: #cbd5e0; line-height: 1.6; font-size: 0.95rem; }
+			.footer-logo h3 { margin: 0; font-size: 1.5rem; }		.footer-slogan { font-size: 0.85rem; color: #667eea; font-weight: 500; margin: 0.5rem 0 0 0; font-style: italic; }			.footer-description, .social-description { color: #cbd5e0; line-height: 1.6; font-size: 0.95rem; }
 			.footer-links { list-style: none; padding: 0; margin: 0; }
 			.footer-links li { margin: 0.75rem 0; }
 			.footer-links a { color: #cbd5e0; text-decoration: none; transition: color 0.2s; font-size: 0.95rem; }
@@ -265,10 +266,13 @@
 		<!-- Site Header with Logo and Navigation -->
 		<header class="site-header">
 			<div class="header-container">
+			<div class="logo-wrapper">
 				<a href="/" class="logo">
 					<img src="images/logo.png" alt="Cloud Couch Logo" width="40" height="40" alt="best boneless couch" />
 					<span>Cloud Couch</span>
 				</a>
+				<p class="logo-slogan">Smart Comfort for Modern Homes</p>
+			</div>
 				<nav>
 					<button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
 						☰
@@ -775,7 +779,7 @@
 
 			<!-- Article Footer -->
 			<footer id="about" style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid #222222;">
-				<img src="images/bonelesscouchexpert.png" alt="Benjamin Etches Author Photo" width="100" height="100" style="border-radius: 50%; float: left; margin-right: 1rem;" />
+				<img src="images/profile-pic-cloudcouch.png" alt="Benjamin Etches Author Photo" width="100" height="100" style="border-radius: 50%; float: left; margin-right: 1rem;" />
 				<p style="font-style: italic; color: #666;">
 					<strong>About the Author:</strong> Benjamin Etches is a home furnishing expert with over 10 years of experience helping families create comfortable, functional living spaces. They specialize in budget-friendly furniture solutions and family-oriented design.
 				</p>
@@ -797,8 +801,7 @@
 						<div class="footer-logo">
 							<img src="images/logo_white.png" alt="Cloud Couch Logo" width="50" height="50" />
 							<h3>Cloud Couch</h3>
-						</div>
-						<p class="footer-description">
+						</div>					<p class="footer-slogan">Your Guide to Ultimate Comfort</p>						<p class="footer-description">
 							Your trusted guide to finding the perfect boneless couch for ultimate comfort and style. We help families create cozy spaces they'll love.
 						</p>
 					</div>
